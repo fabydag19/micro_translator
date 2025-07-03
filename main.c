@@ -6,8 +6,8 @@
 
 // Struct to organize dataset items by field
 struct wordsDict {
-    char enWord[100]; // English words column
-    char itWord[100]; // Italian words column
+    char enWord[50]; // English words column
+    char itWord[50]; // Italian words column
 };
 
 // Functions declaration
@@ -18,7 +18,7 @@ int wordToIndex(char wordKey[], struct wordsDict arrDict[]);
 int main (void) {
 
     struct wordsDict arrDict[WORDS_COUNT]; // Array dictionary
-    char wordKey[46]; // Longest english word has 45 characters (plus terminator \0)
+    char wordKey[50]; 
 
     printf("Start execution...\n");
 
