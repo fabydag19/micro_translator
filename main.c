@@ -47,7 +47,7 @@ void readData(struct wordsDict arrDict[]) {
     FILE *fptr = fopen("dataset/en_it_words.csv", "r");
     if(fptr == NULL){
         printf("File opening failed!");
-        return; // Exit from function without code because is void function
+        exit(-1); // Exit from function without code because is void function
     }
 
     // Skip first row (column headers)
